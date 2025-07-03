@@ -13131,50 +13131,6 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Defaulting to user installation because normal site-packages is not writeable
-Collecting opencv-python-headless==4.5.3.56
-  Downloading opencv_python_headless-4.5.3.56-cp37-cp37m-manylinux2014_x86_64.whl (37.1 MB)
-Collecting bokeh==2.1.1
-  Downloading bokeh-2.1.1.tar.gz (19.3 MB)
-Collecting torchvision==0.12.0
-  Downloading torchvision-0.12.0-cp37-cp37m-manylinux1_x86_64.whl (21.0 MB)
-Collecting tqdm==4.63.0
-  Downloading tqdm-4.63.0-py2.py3-none-any.whl (76 kB)
-Collecting ipywidgets==7.6.5
-  Downloading ipywidgets-7.6.5-py2.py3-none-any.whl (121 kB)
-Collecting livelossplot==0.5.4
-  Downloading livelossplot-0.5.4-py3-none-any.whl (22 kB)
-Collecting pytest==7.1.1
-  Downloading pytest-7.1.1-py3-none-any.whl (297 kB)
-Collecting pandas==1.3.5
-  Downloading pandas-1.3.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.3 MB)
-Collecting seaborn==0.11.2
-  Downloading seaborn-0.11.2-py3-none-any.whl (292 kB)
-Collecting jupyterlab-widgets&gt;=1.0.0; python_version &gt;= &#34;3.6&#34;
-  Downloading jupyterlab_widgets-3.0.15-py3-none-any.whl (216 kB)
-Collecting widgetsnbextension~=3.5.0
-  Downloading widgetsnbextension-3.5.2-py2.py3-none-any.whl (1.6 MB)
-Collecting iniconfig
-  Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
-Collecting py&gt;=1.8.2
-  Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
-Collecting pluggy&lt;2.0,&gt;=0.12
-  Downloading pluggy-1.2.0-py3-none-any.whl (17 kB)
-Collecting tomli&gt;=1.0.0
-  Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
-Building wheels for collected packages: bokeh
-  Building wheel for bokeh (setup.py): started
-  Building wheel for bokeh (setup.py): finished with status &#39;done&#39;
-  Created wheel for bokeh: filename=bokeh-2.1.1-py3-none-any.whl size=9257186 sha256=3aed2f6fbb679d4831672d54104976c1eb034f2736158732d5684a278487c73c
-  Stored in directory: /root/.cache/pip/wheels/f7/55/ff/f3d7554e69382d31cf7ad857cf518af9b923134fca7d925187
-Successfully built bokeh
-Installing collected packages: opencv-python-headless, bokeh, torchvision, tqdm, jupyterlab-widgets, widgetsnbextension, ipywidgets, livelossplot, iniconfig, py, pluggy, tomli, pytest, pandas, seaborn
-<span class="ansi-yellow-fg">  WARNING: The script bokeh is installed in &#39;/root/.local/bin&#39; which is not on PATH.
-  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.</span>
-<span class="ansi-yellow-fg">  WARNING: The script tqdm is installed in &#39;/root/.local/bin&#39; which is not on PATH.
-  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.</span>
-<span class="ansi-yellow-fg">  WARNING: The scripts py.test and pytest are installed in &#39;/root/.local/bin&#39; which is not on PATH.
-  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.</span>
-Successfully installed bokeh-2.1.1 iniconfig-2.0.0 ipywidgets-7.6.5 jupyterlab-widgets-3.0.15 livelossplot-0.5.4 opencv-python-headless-4.5.3.56 pandas-1.3.5 pluggy-1.2.0 py-1.11.0 pytest-7.1.1 seaborn-0.11.2 tomli-2.0.1 torchvision-0.12.0 tqdm-4.63.0 widgetsnbextension-3.5.2
 </pre>
 </div>
 </div>
@@ -13318,19 +13274,21 @@ Successfully installed bokeh-2.1.1 iniconfig-2.0.0 ipywidgets-7.6.5 jupyterlab-w
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-3-d3a027e2ac00&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> ipywidgets <span class="ansi-green-fg">import</span> VBox<span class="ansi-blue-fg">,</span> Button<span class="ansi-blue-fg">,</span> FileUpload<span class="ansi-blue-fg">,</span> Output<span class="ansi-blue-fg">,</span> Label
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">from</span> PIL <span class="ansi-green-fg">import</span> Image
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">from</span> IPython<span class="ansi-blue-fg">.</span>display <span class="ansi-green-fg">import</span> display
-<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-green-fg">import</span> io
-<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-green-fg">import</span> numpy <span class="ansi-green-fg">as</span> np
 
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;ipywidgets&#39;</pre>
+
+
+ 
+ 
+<div id="59746783-1b3e-4f9e-902b-1012a913c543"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#59746783-1b3e-4f9e-902b-1012a913c543');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "58c957fb6ac4446d8699a367da66f2cb", "version_major": 2, "version_minor": 0}
+</script>
 </div>
+
 </div>
 
 </div>
@@ -13363,13 +13321,59 @@ Successfully installed bokeh-2.1.1 iniconfig-2.0.0 ipywidgets-7.6.5 jupyterlab-w
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python src/create_submit_pkg.py
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>executing: jupyter nbconvert --to html cnn_from_scratch.ipynb
+[NbConvertApp] Converting notebook cnn_from_scratch.ipynb to html
+[NbConvertApp] Writing 1095572 bytes to cnn_from_scratch.html
+executing: jupyter nbconvert --to html transfer_learning.ipynb
+[NbConvertApp] Converting notebook transfer_learning.ipynb to html
+[NbConvertApp] Writing 407969 bytes to transfer_learning.html
+executing: jupyter nbconvert --to html app.ipynb
+[NbConvertApp] Converting notebook app.ipynb to html
+[NbConvertApp] Writing 291668 bytes to app.html
+Adding files to submission_2025-07-01T05h48m.tar.gz
+src/train.py
+src/transfer.py
+src/data.py
+src/predictor.py
+src/optimization.py
+src/create_submit_pkg.py
+src/__init__.py
+src/model.py
+src/helpers.py
+cnn_from_scratch.ipynb
+transfer_learning.ipynb
+app.ipynb
+app.html
+cnn_from_scratch.html
+transfer_learning.html
+
+----------------------------------------------------------------
+Done. Please submit the file submission_2025-07-01T05h48m.tar.gz
+----------------------------------------------------------------
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
