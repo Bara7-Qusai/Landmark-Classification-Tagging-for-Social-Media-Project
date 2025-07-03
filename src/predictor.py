@@ -10,6 +10,7 @@ import torchvision.transforms as T
 from .helpers import get_data_location
 
 
+
 class Predictor(nn.Module):
 
     def __init__(self, model, class_names, mean, std):
@@ -21,7 +22,7 @@ class Predictor(nn.Module):
         # We use nn.Sequential and not nn.Compose because the former
         # is compatible with torch.script, while the latter isn't
         self.transforms = nn.Sequential(
-            T.Resize([256, ]),  # We use single int value inside a list due to torchscript type restrictions
+            T.Resize([256, ]),  
             T.CenterCrop(224),
             T.ConvertImageDtype(torch.float),
             T.Normalize(mean.tolist(), std.tolist())
@@ -32,10 +33,10 @@ class Predictor(nn.Module):
             # 1. apply transforms
             x  = self.transforms(x) # YOUR CODE HERE
             # 2. get the logits
-            x  =  self.model(x) # YOUR CODE HERE
+            x  = self.model(x) # YOUR CODE HERE
             # 3. apply softmax
             #    HINT: remmeber to apply softmax across dim=1
-            x  =  F.softmax(x,dim=1) # YOUR CODE HERE
+            x  =  torch.softmax(x,dim=1) # YOUR CODE HERE
 
             return x
 

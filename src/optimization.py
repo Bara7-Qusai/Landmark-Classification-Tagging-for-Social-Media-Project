@@ -10,7 +10,7 @@ def get_loss():
     """
 
     # YOUR CODE HERE: select a loss appropriate for classification
-    loss  = nn.CrossEntropyLoss() # YOUR CODE HERE
+    loss  =  nn.CrossEntropyLoss()# YOUR CODE HERE
 
     return loss
 
@@ -35,8 +35,7 @@ def get_optimizer(
         # YOUR CODE HERE: create an instance of the SGD
         # optimizer. Use the input parameters learning_rate, momentum
         # and weight_decay
-        opt = torch.optim.SGD(
-            model.parameters(),lr=learning_rate,momentum=momentum,weight_decay=weight_decay
+        opt = torch.optim.SGD(model.parameters(),lr= learning_rate,weight_decay=weight_decay,momentum=momentum
             # YOUR CODE HERE
         )
 
@@ -44,9 +43,7 @@ def get_optimizer(
         # YOUR CODE HERE: create an instance of the Adam
         # optimizer. Use the input parameters learning_rate, momentum
         # and weight_decay
-        opt = torch.optim.Adam(
-            model.parameters(),lr=learning_rate,weight_decay=weight_decay 
-            
+        opt = torch.optim.Adam(model.parameters(),lr= learning_rate,weight_decay=weight_decay
             # YOUR CODE HERE
         )
     else:
